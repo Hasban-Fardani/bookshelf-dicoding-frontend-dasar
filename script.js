@@ -99,7 +99,7 @@ addEventListener('DOMContentLoaded', () => {
 
         const title = ev.target[0].value
         const author = ev.target[1].value
-        const year = ev.target[2].value
+        const year = parseInt(ev.target[2].value)  // dont forget to convert to int
         const isComplete = ev.target[3].checked
         const book = createBookObject(title, author, year, isComplete)
 
