@@ -3,9 +3,6 @@ const RENDER_EVENT = 'onrender'
 const books = [
 ]
 
-// elements
-// const searchBookForm = document.getElementById('searchBook')
-
 const saveBooks = () => {
     localStorage.setItem('books', JSON.stringify(books))
     dispatchEvent(new Event(RENDER_EVENT));
